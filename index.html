@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Google Font: Lato -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/caa2f392ac.js" crossorigin="anonymous"></script>
     <style>
         .font-lato {
             font-family: 'Lato', sans-serif;
@@ -21,17 +24,151 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'btn-primary': '#F85559',
                     }
                 }
             }
         }
     </script>
-
 </head>
 
 <body>
+    <header>
+        <!-- Navbar section -->
+        <section class="max-w-screen-xl mx-auto my-14 py-5 px-8 md:px-10 lg:px-18 mb-24">
+            <div class="navbar bg-[#F85559] rounded-full">
+                <div class="flex flex-1 gap-2">
+                    <!-- menu -->
+                    <div class="flex-1">
+                        <ul class="md:visible menu menu-horizontal md:text-white invisible ">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <!-- logo -->
+                    <div class="flex-1">
+                        <div class="flex items-center rounded-full">
+                            <img class="" src="./images/logo.png" />
+                            <h1 class="text-white text-sm md:text-2xl font-bold">Fruit Burst</h1>
+                        </div>
+                    </div>
+                    <!-- brows -->
+                    <div class="inline form-control">
+                        <input type="text" placeholder="Search" class="input input-bordered  md:w-auto rounded-full" />
+                        <i class="fa-solid fa-magnifying-glass relative right-10"></i>
+                    </div>
 
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Banner section  -->
+        <section class="max-w-screen-xl mx-auto my-14 py-5 px-8 md:px-10 lg:px-18">
+            <!-- images -->
+            <div class="carousel w-full">
+                <!-- banner 1 -->
+                <div id="slide1" class="carousel-item relative w-full card shadow-xl image-full mb-5 rounded-none">
+                    <!-- image -->
+                    <figure class="w-full"><img src="images/banner1.png" alt="Fruits" /></figure>
+                    <!-- content -->
+                    <div class="absolute card-body text-center items-center justify-center">
+                        <div class="">
+                            <h2 class="card-title justify-center text-7xl font-extrabold mb-4">Exotic tastes at your
+                                <br>
+                                doorstep
+                            </h2>
+                            <p class="text-center mb-4">We supply highly quality organic products</p>
+                            <div class="card-actions justify-center btn-[#F85559] mb-4">
+                                <button class="btn bg-btn-primary border-0">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- banner 2 -->
+                <div id="slide2" class="carousel-item relative w-full card shadow-xl image-full mb-5 rounded-none">
+                    <!-- image -->
+                    <figure class="w-full"><img src="images/banner2.png" alt="Fruits" /></figure>
+                    <!-- content -->
+                    <div class="card-body text-center items-center justify-center">
+                        <div>
+                            <h2 class="card-title justify-center mb-4 text-7xl font-extrabold">Exotic tastes at your
+                                <br>
+                                doorstep
+                            </h2>
+                            <p class="text-center mb-4">We supply highly quality organic products</p>
+                            <div class="card-actions justify-center btn-[#F85559] mb-4">
+                                <button class="btn bg-btn-primary border-0">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-8">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+
+                </div>
+                <!-- banner 3 -->
+                <div id="slide3" class="carousel-item relative w-full card shadow-xl image-full mb-5 rounded-none">
+                    <!-- image -->
+                    <figure class="w-full"><img src="images/banner3.png" alt="Fruits" /></figure>
+                    <!-- content -->
+                    <div class="card-body text-center items-center justify-center">
+                        <div>
+                            <h2 class="card-title justify-center mb-4 text-7xl font-extrabold">Exotic tastes at your
+                                <br>
+                                doorstep
+                            </h2>
+                            <p class="text-center mb-4">We supply highly quality organic products</p>
+                            <div class="card-actions justify-center btn-[#F85559] mb-4">
+                                <button class="btn bg-btn-primary border-0">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-6">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- banner 4 -->
+                <div id="slide4" class="carousel-item relative w-full card shadow-xl image-full mb-5 rounded-none">
+                    <!-- image -->
+                    <figure class="w-full"><img src="images/banner4.png" alt="Fruits" /></figure>
+                    <!-- content -->
+                    <div class="card-body text-center items-center justify-center">
+                        <div>
+                            <h2 class="card-title justify-center mb-4 text-7xl font-extrabold">Exotic tastes at your
+                                <br>
+                                doorstep
+                            </h2>
+                            <p class="text-center mb-4">We supply highly quality organic products</p>
+                            <div class="card-actions justify-center btn-[#F85559] mb-4">
+                                <button class="btn bg-btn-primary border-0">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-4">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
